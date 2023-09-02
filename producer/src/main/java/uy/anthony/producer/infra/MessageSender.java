@@ -15,7 +15,7 @@ public class MessageSender {
     }
 
     public String sendMessage(String message) {
-        amqpTemplate.convertAndSend("amq.direct", "123456", message);
+        amqpTemplate.convertAndSend("amq.direct", "654321", message);
         System.out.println("Sent message: " + message);
         return message;
     }

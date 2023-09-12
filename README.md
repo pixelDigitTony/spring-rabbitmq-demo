@@ -85,6 +85,10 @@ To test the application, go to [MessageControllerTest](producer/src/test/java/uy
 
 # Other Tools Used
 
+* [RabbitMQ](https://www.rabbitmq.com/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [Spring AMQP](https://spring.io/projects/spring-amqp)
+
 # Todo
 - [x] Implement functionality to send String messages to the consumer
 - [x] Implement functionality to send JSON data to the consumer

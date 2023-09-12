@@ -1,4 +1,4 @@
-# Spring React Authentication Demo
+# Spring RabbitMQ Demo
 This is a demo project for Spring Boot and RabbitMQ. This is to explore the features and functionalities of RabbitMQ, as well as knowing to how to use messaging queues.
 
 # Project Structure
@@ -6,6 +6,7 @@ This is a demo project for Spring Boot and RabbitMQ. This is to explore the feat
 The project is divided into 3 2 modules: the consumer, and the producer. The consumer is the receiver of the message, and the producer is the sender of the message.
 
 here's what the project structure looks like when you open the src folder:
+
 ## Consumer
 ```
 ├─consumer
@@ -79,24 +80,16 @@ This section teaches how to install, run and test the application.
 
 ## Testing
 
+To test the application, go to [MessageControllerTest](producer/src/test/java/uy/anthony/producer/application/MessageControllerTest.java) class, it is where the unit tests are located, you can run the tests from there, and see how data is passed between 2 modules with different ports using RabbitMQ.
+
 
 # Other Tools Used
 
-* [Spring Boot v3.1.1](https://spring.io/projects/spring-boot)
-* [Spring Security v6.1.1](https://spring.io/projects/spring-security)
-* [Thymeleaf](https://www.thymeleaf.org)
-* [ReactJS v18.2.0](https://reactjs.org/)
-* [Axios v1.4.0](https://axios-http.com/docs/intro)
-* [Typescript v5.0.2](https://www.typescriptlang.org)
-* [Vite v4.4.5](https://vitejs.dev)
-* [FlywayDB 9.16.3](https://flywaydb.org)
-* [PostgreSQL:latest (docker image)](https://www.postgresql.org)
-* [Material UI](https://mui.com)
-* [Material UI Icons](https://mui.com)
-
 # Todo
 - [x] Implement functionality to send String messages to the consumer
-- [ ] Implement functionality to send JSON data to the consumer
+- [x] Implement functionality to send JSON data to the consumer
+- 
 # References
 
 * [Tutorial for Spring amqp](https://www.rabbitmq.com/tutorials/tutorial-four-spring-amqp.html)
+* [RabbitMQ documentation](https://www.rabbitmq.com/documentation.html)
